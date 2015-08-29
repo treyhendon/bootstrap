@@ -467,6 +467,8 @@ legend {
 }
 
 input[type="search"] {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   -webkit-appearance: none;
 }
 
@@ -524,22 +526,22 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 3.5rem;
+  font-size: 6rem;
   font-weight: 300;
 }
 
 .display-2 {
-  font-size: 4.5rem;
-  font-weight: 300;
-}
-
-.display-3 {
   font-size: 5.5rem;
   font-weight: 300;
 }
 
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
 .display-4 {
-  font-size: 6rem;
+  font-size: 3.5rem;
   font-weight: 300;
 }
 
@@ -649,7 +651,7 @@ mark,
   color: #818a91;
 }
 
-.img-responsive, .figure > img, .carousel-inner > .carousel-item > img,
+.img-fluid, .figure > img, .carousel-inner > .carousel-item > img,
 .carousel-inner > .carousel-item > a > img {
   display: block;
   max-width: 100%;
@@ -1971,7 +1973,7 @@ fieldset[disabled] .form-control {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .radio,
@@ -2059,7 +2061,7 @@ fieldset[disabled] .checkbox label {
 }
 
 .has-success .help-block,
-.has-success .control-label,
+.has-success .form-control-label,
 .has-success .radio,
 .has-success .checkbox,
 .has-success .radio-inline,
@@ -2090,7 +2092,7 @@ fieldset[disabled] .checkbox label {
 }
 
 .has-warning .help-block,
-.has-warning .control-label,
+.has-warning .form-control-label,
 .has-warning .radio,
 .has-warning .checkbox,
 .has-warning .radio-inline,
@@ -2121,7 +2123,7 @@ fieldset[disabled] .checkbox label {
 }
 
 .has-error .help-block,
-.has-error .control-label,
+.has-error .form-control-label,
 .has-error .radio,
 .has-error .checkbox,
 .has-error .radio-inline,
@@ -2177,7 +2179,7 @@ fieldset[disabled] .checkbox label {
   .form-inline .input-group > .form-control {
     width: 100%;
   }
-  .form-inline .control-label {
+  .form-inline .form-control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
