@@ -1,0 +1,159 @@
+<h1 id="contributing-to-bootstrap">Contributing to Bootstrap</h1>
+<p>Looking to contribute something to Bootstrap? <strong>Here&#39;s how you can help.</strong></p>
+<p>Please take a moment to review this document in order to make the contribution
+process easy and effective for everyone involved.</p>
+<p>Following these guidelines helps to communicate that you respect the time of
+the developers managing and developing this open source project. In return,
+they should reciprocate that respect in addressing your issue or assessing
+patches and features.</p>
+<h2 id="using-the-issue-tracker">Using the issue tracker</h2>
+<p>The <a href="https://github.com/twbs/bootstrap/issues">issue tracker</a> is
+the preferred channel for <a href="#bug-reports">bug reports</a>, <a href="#feature-requests">features requests</a>
+and <a href="#pull-requests">submitting pull requests</a>, but please respect the following
+restrictions:</p>
+<ul>
+<li><p>Please <strong>do not</strong> use the issue tracker for personal support requests.  Stack
+Overflow (<a href="http://stackoverflow.com/questions/tagged/twitter-bootstrap-3"><code>twitter-bootstrap-3</code></a> tag) or <a href="https://github.com/twbs/bootstrap/blob/master/README.md#community">IRC</a> are better places to get help.</p>
+</li>
+<li><p>Please <strong>do not</strong> derail or troll issues. Keep the discussion on topic and
+respect the opinions of others.</p>
+</li>
+<li><p>Please <strong>do not</strong> open issues or pull requests regarding the code in
+<a href="https://github.com/necolas/normalize.css"><code>Normalize</code></a> (open them in
+their respective repositories).</p>
+</li>
+</ul>
+<h2 id="bug-reports">Bug reports</h2>
+<p>A bug is a <em>demonstrable problem</em> that is caused by the code in the repository.
+Good bug reports are extremely helpful, so thanks!</p>
+<p>Guidelines for bug reports:</p>
+<ol>
+<li><p><strong>Use the GitHub issue search</strong> &mdash; check if the issue has already been
+reported.</p>
+</li>
+<li><p><strong>Check if the issue has been fixed</strong> &mdash; try to reproduce it using the
+latest <code>master</code> or development branch in the repository.</p>
+</li>
+<li><p><strong>Isolate the problem</strong> &mdash; ideally create a <a href="http://css-tricks.com/6263-reduced-test-cases/">reduced test
+case</a> and a live example.
+<a href="http://jsbin.com/EBAwOkOK/1">This JS Bin</a> is a helpful template.</p>
+</li>
+</ol>
+<p>A good bug report shouldn&#39;t leave others needing to chase you up for more
+information. Please try to be as detailed as possible in your report. What is
+your environment? What steps will reproduce the issue? What browser(s) and OS
+experience the problem? Do other browsers show the bug differently? What
+would you expect to be the outcome? All these details will help people to fix
+any potential bugs.</p>
+<p>Example:</p>
+<blockquote>
+<p>Short and descriptive example bug report title</p>
+<p>A summary of the issue and the browser/OS environment in which it occurs. If
+suitable, include the steps required to reproduce the bug.</p>
+<ol>
+<li>This is the first step</li>
+<li>This is the second step</li>
+<li>Further steps, etc.</li>
+</ol>
+<p><code>&lt;url&gt;</code> - a link to the reduced test case</p>
+<p>Any other information you want to share that is relevant to the issue being
+reported. This might include the lines of code that you have identified as
+causing the bug, and potential solutions (and your opinions on their
+merits).</p>
+</blockquote>
+<h2 id="feature-requests">Feature requests</h2>
+<p>Feature requests are welcome. But take a moment to find out whether your idea
+fits with the scope and aims of the project. It&#39;s up to <em>you</em> to make a strong
+case to convince the project&#39;s developers of the merits of this feature. Please
+provide as much detail and context as possible.</p>
+<h2 id="pull-requests">Pull requests</h2>
+<p>Good pull requests—patches, improvements, new features—are a fantastic
+help. They should remain focused in scope and avoid containing unrelated
+commits.</p>
+<p><strong>Please ask first</strong> before embarking on any significant pull request (e.g.
+implementing features, refactoring code, porting to a different language),
+otherwise you risk spending a lot of time working on something that the
+project&#39;s developers might not want to merge into the project.</p>
+<p>Please adhere to the <a href="#code-guidelines">coding guidelines</a> used throughout the
+project (indentation, accurate comments, etc.) and any other requirements
+(such as test coverage).</p>
+<p>Adhering to the following process is the best way to get your work
+included in the project:</p>
+<ol>
+<li><p><a href="http://help.github.com/fork-a-repo/">Fork</a> the project, clone your fork,
+and configure the remotes:</p>
+<pre><code class="lang-bash"># Clone your fork of the repo into the current directory
+git clone https://github.com/&lt;your-username&gt;/bootstrap.git
+# Navigate to the newly cloned directory
+cd bootstrap
+# Assign the original repo to a remote called &quot;upstream&quot;
+git remote add upstream https://github.com/twbs/bootstrap.git
+</code></pre>
+</li>
+<li><p>If you cloned a while ago, get the latest changes from upstream:</p>
+<pre><code class="lang-bash">git checkout master
+git pull upstream master
+</code></pre>
+</li>
+<li><p>Create a new topic branch (off the main project development branch) to
+contain your feature, change, or fix:</p>
+<pre><code class="lang-bash">git checkout -b &lt;topic-branch-name&gt;
+</code></pre>
+</li>
+<li><p>Commit your changes in logical chunks. Please adhere to these <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">git commit
+message guidelines</a>
+or your code is unlikely be merged into the main project. Use Git&#39;s
+<a href="https://help.github.com/articles/interactive-rebase">interactive rebase</a>
+feature to tidy up your commits before making them public.</p>
+</li>
+<li><p>Locally merge (or rebase) the upstream development branch into your topic branch:</p>
+<pre><code class="lang-bash">git pull [--rebase] upstream master
+</code></pre>
+</li>
+<li><p>Push your topic branch up to your fork:</p>
+<pre><code class="lang-bash">git push origin &lt;topic-branch-name&gt;
+</code></pre>
+</li>
+<li><p><a href="https://help.github.com/articles/using-pull-requests/">Open a Pull Request</a>
+ with a clear title and description against the <code>master</code> branch.</p>
+</li>
+</ol>
+<p><strong>IMPORTANT</strong>: By submitting a patch, you agree to allow the project owners to
+license your work under the terms of the <a href="LICENSE.md">MIT License</a>.</p>
+<h2 id="code-guidelines">Code guidelines</h2>
+<h3 id="html">HTML</h3>
+<ul>
+<li>Two spaces for indentation, never tabs.</li>
+<li>Double quotes only, never single quotes.</li>
+<li>Always use proper indentation.</li>
+<li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags).</li>
+<li>Use CDNs and HTTPS for third-party JS when possible. We don&#39;t use protocol-relative URLs in this case because they break when viewing the page locally via <code>file://</code>.</li>
+<li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">WAI-ARIA</a> attributes in documentation examples to promote accessibility.</li>
+</ul>
+<h3 id="css">CSS</h3>
+<ul>
+<li>CSS changes must be done in <code>.less</code> files first, never just in the compiled <code>.css</code> files.</li>
+<li>Adhere to the <a href="http://markdotto.com/2011/11/29/css-property-order/">CSS property order</a>.</li>
+<li>Multiple-line approach (one property and value per line).</li>
+<li>Always a space after a property&#39;s colon (e.g., <code>display: block;</code> and not <code>display:block;</code>).</li>
+<li>End all lines with a semi-colon.</li>
+<li>For multiple, comma-separated selectors, place each selector on its own line.</li>
+<li>Attribute selectors, like <code>input[type=&quot;text&quot;]</code> should always wrap the attribute&#39;s value in double quotes, for consistency and safety (see this <a href="http://mathiasbynens.be/notes/unquoted-attribute-values">blog post on unquoted attribute values</a> that can lead to XSS attacks).</li>
+<li>Attribute selectors should only be used where absolutely necessary (e.g., form controls) and should be avoided on custom components for performance and explicitness.</li>
+<li>Series of classes for a component should include a base class (e.g., <code>.component</code>) and use the base class as a prefix for modifier and sub-components (e.g., <code>.component-lg</code>).</li>
+<li>Avoid inheritance and over nesting—use single, explicit classes whenever possible.</li>
+<li>When feasible, default color palettes should comply with <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast">WCAG color contrast guidelines</a>.</li>
+<li>Except in rare cases, don&#39;t remove default <code>:focus</code> styles (via e.g. <code>outline: none;</code>) without providing alternative styles. See <a href="http://a11yproject.com/posts/never-remove-css-outlines/">this A11Y Project post</a> for more details.</li>
+</ul>
+<h3 id="js">JS</h3>
+<ul>
+<li>No semicolons (in client-side JS)</li>
+<li>2 spaces (no tabs)</li>
+<li>strict mode</li>
+<li>&quot;Attractive&quot;</li>
+</ul>
+<h3 id="checking-coding-style">Checking coding style</h3>
+<p>Run <code>grunt test</code> before committing to ensure your changes follow our coding standards.</p>
+<h2 id="license">License</h2>
+<p>By contributing your code, you agree to license your contribution under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT license</a>.</p>
+<p>Prior to v3.1.0, Bootstrap was released under the Apache License v2.0.</p>
